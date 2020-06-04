@@ -1,0 +1,120 @@
+@font-face {
+    src: url('../font/TCCEB.TTF');
+}
+
+body {
+    padding: 120px;
+    background-color: #0D324D;
+    text-align: center;
+}
+
+.bp {
+    -fx-background-image:url('../images/wallpaper.jpg');
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+}
+
+.bpConnect {
+    -fx-background-image:url('../images/wallpaperConnect.jpg');
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+}
+
+Label{
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+}
+
+.btn {
+    -fx-font-size: 30px;
+    -fx-pref-width: 300px;
+    -fx-min-height: 50px;
+    -fx-background-color:
+            linear-gradient(#535357, #3b3736),
+            radial-gradient(center 50% -40%, radius 200%, #535357 45%, #3b3736 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fff;
+}
+
+.btn:hover{
+    -fx-background-color:
+            linear-gradient(#75757a, #5c5857),
+            radial-gradient(center 50% -40%, radius 200%, #75757a 45%, #5c5857 50%);
+}
+
+.btnForm {
+    -fx-font-size: 25px;
+    -fx-pref-width: 200px;
+    -fx-min-height: 50px;
+    -fx-background-color:
+            linear-gradient(#535357, #3b3736),
+            radial-gradient(center 50% -40%, radius 200%, #535357 45%, #3b3736 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fff;
+}
+
+.btnForm:hover{
+    -fx-background-color:
+            linear-gradient(#75757a, #5c5857),
+            radial-gradient(center 50% -40%, radius 200%, #75757a 45%, #5c5857 50%);
+}
+
+
+.gp{
+    -fx-background-color: #c3c3c3;
+    -fx-max-width: 450px;
+    -fx-max-height: 400px;
+    -fx-background-radius: 20px;
+    -fx-padding: 20px;
+}
+
+.input {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-min-height: 30px;
+    -fx-font-size: 20px;
+}
+
+.input:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-border-color: #3b3736 ;
+    -fx-border-width : 0 0 2 0;
+}
+
+.FormTitre{
+    -fx-font-size: 45px;
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-border-color: #3b3736 ;
+    -fx-border-width : 0 0 5 0;
+}
+
+.messageErreur{
+    -fx-font-size: 15px;
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 0;
+}
+
+.list-cell{
+    -fx-background-color: #C2C2C2;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-border-color: #3b3736 ;
+    -fx-border-width : 0 1 0 1;
+    -fx-border-radius: 20px;
+    -fx-text-fill: #3b3736;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #75757a;
+    -fx-background-radius: 20px;
+    -fx-text-fill: white;
+}

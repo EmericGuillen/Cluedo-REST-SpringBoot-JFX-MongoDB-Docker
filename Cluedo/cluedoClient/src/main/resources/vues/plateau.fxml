@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bpPlateau" styleClass="bpPlateau" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vues.Plateau">
+   <stylesheets>
+      <URL value="@../css/plateau.css" />
+   </stylesheets>
+   <top>
+       <BorderPane maxWidth="200.0" prefWidth="200.0" styleClass="idPartie" BorderPane.alignment="CENTER">
+           <center>
+               <Text fx:id="idPartie" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+           </center>
+       </BorderPane>
+   </top>
+   <right>
+      <VBox prefWidth="200.0" spacing="5" styleClass="vBoxAction" BorderPane.alignment="CENTER">
+         <children>
+             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des joueurs :" textAlignment="CENTER" wrappingWidth="173.20433807373047" />
+             <ListView fx:id="listeJoueurs" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" styleClass="listeJoueurs" />
+             <Button fx:id="buttonLanceDes" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#lancerDes" text="Lancer les dés" />
+             <Text fx:id="nbDeplacementAutorise" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+             <Button fx:id="buttonVoirCarnet" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#voirCarnet" text="Voir carnet d'indices" />
+             <Button fx:id="buttonVoirCarte" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#voirCartes" text="Voir ses cartes" />
+
+             <Button fx:id="buttonHypothese" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hypothese" text="Hypothèse" />
+             <Button fx:id="buttonAccuse" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accuser" text="Accuser" />
+             <Button fx:id="buttonPrendPassage" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#prendrePassage" text="Prendre le passage" />
+             <Button fx:id="buttonFinirTour" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#finirSonTour" text="Finir son tour" />
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <GridPane prefHeight="100.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.20001220703125" minWidth="10.0" prefWidth="264.800048828125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.199951171875" minWidth="10.0" prefWidth="535.199951171875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="consolePlateau" prefHeight="200.0" prefWidth="277.0" styleClass="consolePlateau" />
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="lancerPartie" minWidth="250" mnemonicParsing="false" onAction="#lancerPartieOk" styleClass="btnForm2" text="LANCER PARTIE" />
+                   <Button fx:id="quitterPartie" minWidth="250" mnemonicParsing="false" onAction="#quitterPartieOk" styleClass="btnForm2" text="ABANDONNER PARTIE" GridPane.rowIndex="1" />
+                  <Button fx:id="sauvegarderPartie" minWidth="250" mnemonicParsing="false" onAction="#sauvegarderPartieOk" styleClass="btnForm2" text="SAUVEGARDER PARTIE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

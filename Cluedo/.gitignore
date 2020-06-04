@@ -1,0 +1,12 @@
+.DS_Store
+*.target
+*.iml
+.idea
+target
+bin
+lib/
+idea/
+cluedoWS/target
+.idea/*
+cluedoWS/src/main/resources
+cluedoWS/src/main/java/cluedo/config/WebConfig.java

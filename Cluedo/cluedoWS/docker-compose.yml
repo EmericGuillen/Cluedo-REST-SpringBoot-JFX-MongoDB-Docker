@@ -1,0 +1,14 @@
+version: "3"
+services:
+  database-cluedo:
+    image: mongo:3.2.4
+    container_name: "database-cluedo"
+    ports:
+      - 27017:27017
+    command: --smallfiles
+  api:
+    image: docker-cluedo
+    ports:
+      - 8080:8080
+    links:
+      - database-cluedo

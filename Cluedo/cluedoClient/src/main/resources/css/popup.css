@@ -1,0 +1,24 @@
+.list-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 0;
+}
+
+.list-cell{
+    -fx-background-color: #C2C2C2;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-border-color: #3b3736 ;
+    -fx-border-width : 0 1 0 1;
+    -fx-border-radius: 20px;
+    -fx-text-fill: #3b3736;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #75757a;
+    -fx-background-radius: 20px;
+    -fx-text-fill: white;
+}

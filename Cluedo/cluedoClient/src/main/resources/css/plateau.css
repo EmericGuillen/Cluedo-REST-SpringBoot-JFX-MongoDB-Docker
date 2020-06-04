@@ -1,0 +1,124 @@
+.bpPopup{
+    -fx-background-color: rgba(195, 195, 195, 0.5);
+}
+
+.bpPopupBis{
+    -fx-background-color: #c3c3c3;
+    -fx-background-radius: 20px;
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-size: 17px;
+}
+
+.btnForm {
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-size: 25px;
+    -fx-pref-width: 200px;
+    -fx-min-height: 50px;
+    -fx-background-color:
+            linear-gradient(#535357, #3b3736),
+            radial-gradient(center 50% -40%, radius 200%, #535357 45%, #3b3736 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fff;
+}
+
+.btnForm:hover{
+    -fx-background-color:
+            linear-gradient(#75757a, #5c5857),
+            radial-gradient(center 50% -40%, radius 200%, #75757a 45%, #5c5857 50%);
+}
+
+.btnForm2 {
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-size: 25px;
+    -fx-pref-width: 250px;
+    -fx-min-height: 50px;
+    -fx-background-color:
+            linear-gradient(#535357, #3b3736),
+            radial-gradient(center 50% -40%, radius 200%, #535357 45%, #3b3736 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fff;
+}
+
+.btnForm2:hover{
+    -fx-background-color:
+            linear-gradient(#75757a, #5c5857),
+            radial-gradient(center 50% -40%, radius 200%, #75757a 45%, #5c5857 50%);
+}
+
+.bpPlateau {
+    -fx-background-image:url('../images/wallpaperConnect.jpg');
+}
+
+.FormTitre{
+    -fx-font-size: 35px;
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-border-color: #3b3736 ;
+    -fx-border-width : 0 0 5 0;
+}
+
+.listeJoueurs{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 20px;
+    -fx-padding: 0;
+}
+
+.listeJoueurs .list-cell{
+    -fx-background-color: transparent;
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+}
+
+.vBoxAction {
+    -fx-background-color: rgba(195, 195, 195, 1);
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-size: 15px;
+    -fx-background-radius: 20px;
+    -fx-background-radius: 5 0 0 5;
+    -fx-padding: 10px;
+    -fx-border-color: #3b3736 ;
+    -fx-border-width : 5 0 5 5;
+    -fx-border-radius: 20px;
+    -fx-border-radius: 5 0 0 5;
+}
+
+.idPartie {
+    -fx-background-color: rgba(195, 195, 195, 1);
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-size: 35px;
+    -fx-background-radius: 20px;
+    -fx-background-radius: 0 0 5 5;
+    -fx-padding: 10px;
+    -fx-border-color: #3b3736;
+    -fx-border-width : 0 5 5 5;
+    -fx-border-radius: 20px;
+    -fx-border-radius: 0 0 5 5;
+}
+
+.consolePlateau {
+    -fx-background-color: rgba(195, 195, 195, 1);
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-size: 15px;
+    -fx-border-color: #3b3736 ;
+    -fx-border-width : 5 5 0 0;
+}
+
+.bpNomSalle{
+    -fx-background-color: rgba(195, 195, 195, 1);
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-padding: 3px;
+    -fx-background-radius: 20px;
+    -fx-background-radius: 2;
+    -fx-border-radius: 20px;
+    -fx-border-radius: 2;
+    -fx-border-width : 2;
+    -fx-border-color: #3b3736;
+}
+
+.textNomSalle{
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+}

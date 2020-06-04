@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="root" minHeight="600.0" minWidth="800.0" prefWidth="800.0" styleClass="bp" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vues.Inscription">
+    <stylesheets>
+        <URL value="@../css/application.css" />
+    </stylesheets>
+   <top>
+          <ImageView fitHeight="265.0" fitWidth="592.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+              <image>
+                  <Image url="@../images/LOGO_cluedo.png" />
+              </image>
+          </ImageView>
+   </top>
+   <center>
+      <GridPane styleClass="gp" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.rowIndex="5">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#retourOk" styleClass="btnForm" text="RETOUR" />
+                  <Button mnemonicParsing="false" onAction="#incriptionOk" styleClass="btnForm" text="INSCRIPTION" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" prefHeight="74.0" prefWidth="410.0" styleClass="FormTitre" text="INSCRIPTION" />
+            <Label fx:id="messageErreur" alignment="CENTER" prefHeight="34.0" prefWidth="410.0" styleClass="messageErreur" text="" GridPane.rowIndex="1" />
+            <TextField fx:id="nom" promptText="Nom" styleClass="input" GridPane.rowIndex="2" />
+            <PasswordField fx:id="password" promptText="Mot de passe" styleClass="input" GridPane.rowIndex="3" />
+            <PasswordField fx:id="confirmPassword" promptText="Vérification mot de passe" styleClass="input" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
